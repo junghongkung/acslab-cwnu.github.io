@@ -106,11 +106,11 @@
         <h2>Introduction</h2>
         <hr>
         <p>
-          <?
-          header('Content-Type: text/plain');
+          <?php
+          header("Content-Type: text/plain");
 
-          $test =readfile('/index_introduction.txt');
-          echo ""&lt;br&gt;";
+          $test =readfile("/index_introduction.txt");
+          echo "&lt;br&gt;";
           echo $test;
 
           ?>
@@ -121,7 +121,7 @@
         <hr>
         <address>
           <strong>ACSLab, Changwon National University</strong>
-          <?
+          <?php
           header('Content-Type: text/plain');
 
           $test =readfile('acslab-cwnu.github.io/index_contact.txt');
@@ -167,7 +167,7 @@
           <h4 class="card-header">Visible Light Communication</h4>
           <div class="card-body">
             <p class="card-text">
-              <?
+              <?php
               header("Content-Type: text/plain");
 
               $test =readfile("acslab-cwnu.github.io/index_VLC.txt");
