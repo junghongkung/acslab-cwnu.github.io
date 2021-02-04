@@ -161,8 +161,15 @@
         <div class="card h-100">
           <h4 class="card-header">Visible Light Communication</h4>
           <div class="card-body">
-            <p class="card-text">The VLC received attention as a potential means to reduce the spectral load on radio cell systems.</p>
-            <p class="card-text">Our laboratory researches and experiments with various types of VLC schemes.</p>
+            <p class="card-text">
+              <?
+              header('Content-Type: text/plain');
+
+              $test =readfile('index_VLC.txt');
+              echo '&lt;br&gt;';
+              echo $test;
+              ?>
+            </p>
           </div>
         </div>
       </div>
