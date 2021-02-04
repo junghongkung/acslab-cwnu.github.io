@@ -120,9 +120,13 @@
         <hr>
         <address>
           <strong>ACSLab, Changwon National University</strong>
-          <br>20, Changwondaehak-ro, Uichang-gu, Changwon-si
-          <br>Gyeongsangnam-do, Republic of Korea
-          <br>
+          <?
+          header('Content-Type: text/plain');
+
+          $test =readfile('index_contact.txt');
+          echo '&lt;br&gt;';
+          echo $test;
+          ?>
         </address>
       </div>
     </div>
