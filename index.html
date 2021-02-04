@@ -106,7 +106,7 @@
         <h2>Introduction</h2>
         <hr>
         <p>
-          <?include("index_introduction.php");?>
+          <? include("index_introduction.php");?>
 
         </p>
       </div>
@@ -115,13 +115,8 @@
         <hr>
         <address>
           <strong>ACSLab, Changwon National University</strong>
-          <?
-          header("Content-Type: text/plain");
+          <? include("index_contact.php");?>
 
-          $test =file_get_contents("./index_contact.txt");
-          echo "&lt;br&gt;";
-          echo $test;
-          ?>
         </address>
       </div>
     </div>
@@ -161,16 +156,7 @@
           <h4 class="card-header">Visible Light Communication</h4>
           <div class="card-body">
             <p class="card-text">
-              <?
-              <!--header("Content-Type: text/plain");
-
-              $test =file_get_contents("./index_VLC.txt");
-              echo "&lt;br&gt;";
-              echo $test;-->
-              echo "-end-'";
-              $DOCUMENT_ROOT=$_SERVER ['DOCUMENT_ROOT'];
-              echo $DOCUMENT_ROOT . "&lt;br&gt;";
-              ?>
+              <? include("index_VLC.php");?>
             </p>
           </div>
         </div>
