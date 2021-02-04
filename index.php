@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+
+
+  <title>ACSLab - Changwon National University</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom styles for this template -->
+  <link href="css/modern-business.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">ACSLab</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="professor.html">Professor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="member.html">Member</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              what's new
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+              <a class="dropdown-item" href="whats_new.html">what's new</a>
+              <a class="dropdown-item" href="notice.html">notice</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="publications.html">Publications</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Project
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+              <a class="dropdown-item" href="project.html">Project</a>
+              <a class="dropdown-item" href="study.html">Study</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div class="container">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <!-- Slide One - Set the background image for this slide in the line below -->
+        <img  class="carousel-item img-responsive active" src="img/acsl.png">
+        <!-- Slide Two - Set the background image for this slide in the line below -->
+        <img class="carousel-item img-responsive" src="img/acsl.png">
+        <!-- Slide Three - Set the background image for this slide in the line below -->
+        <img class="carousel-item img-responsive" src="img/acsl.png">
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    </div>
+  </header>
+
+  <!-- Under Construction-->
+  <div class="container"><h3 class="text-white bg-danger text-center">This website is currently under construction!!</h3></div>
+
+  <!-- Page Content -->
+  <div class="container">
+    <h1 class="col-md-12 section-container-spacer">Welcome to ACSLab</h1>
+    <div class="row">
+      <div class="col-md-8 mb-5">
+        <h2>Introduction</h2>
+        <hr>
+        <p>
+          <?
+          header("Content-Type: text/plain");
+
+          $test =file_get_contents("./index_introduction.txt");
+          echo "&lt;br&gt;";
+          echo $test;
+
+          ?>
+        </p>
+      </div>
+      <div class="col-md-4 mb-5">
+        <h2>Contact Us</h2>
+        <hr>
+        <address>
+          <strong>ACSLab, Changwon National University</strong>
+          <?
+          header("Content-Type: text/plain");
+
+          $test =file_get_contents("./index_contact.txt");
+          echo "&lt;br&gt;";
+          echo $test;
+          ?>
+        </address>
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <!--lab news and notice-->
+    <div class="row">
+      <div class="col-md-6 mb-5">
+        <h2>What's new</h2>
+        <hr>
+        <ul>
+          <li><a href="#" class="text-reset">example1</a><font style="color:gray; float:right;">2020-12-04</font></li>
+          <li><a href="#" class="text-reset">example1</a><font style="color:gray; float:right;">2020-12-04</font></li>
+          <li><a href="#" class="text-reset">example3</a><font style="color:gray; float:right;">2020-12-04</font></li>
+          <li><a href="#" class="text-reset">example4</a><font style="color:gray; float:right;">2020-12-04</font></li>
+          <li><a href="#" class="text-reset">example5</a><font style="color:gray; float:right;">2020-12-04</font></li>
+        </ul>
+      </div>
+      <div class="col-md-6 mb-5">
+        <h2>notice</h2>
+        <hr>
+        <ul>
+          <li><a href="#" class="text-reset">example1</a><font style="color:gray; float:right;">2020-12-04</font></li>
+          <li><a href="#" class="text-reset">example1</a><font style="color:gray; float:right;">2020-12-04</font></li>
+          <li><a href="#" class="text-reset">example3</a><font style="color:gray; float:right;">2020-12-04</font></li>
+          <li><a href="#" class="text-reset">example4</a><font style="color:gray; float:right;">2020-12-04</font></li>
+          <li><a href="#" class="text-reset">example5</a><font style="color:gray; float:right;">2020-12-04</font></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Our Works Section -->
+    <h2>Our Works</h2>
+    <div class="row">
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100">
+          <h4 class="card-header">Visible Light Communication</h4>
+          <div class="card-body">
+            <p class="card-text">
+              <?
+              <!--header("Content-Type: text/plain");
+
+              $test =file_get_contents("./index_VLC.txt");
+              echo "&lt;br&gt;";
+              echo $test;-->
+              echo "-end-'";
+              $DOCUMENT_ROOT=$_SERVER ['DOCUMENT_ROOT'];
+              echo $DOCUMENT_ROOT . "&lt;br&gt;";
+              ?>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100">
+          <h4 class="card-header">Machine Learning<br>Deep Learning</h4>
+          <div class="card-body">
+            <p class="card-text">Among the various technological elements of AI, ML(Machine Learning) and DL(Deep Learning) have been attracting attention in recent years.</p>
+            <p class="card-text">Our laboratory researches various machine learning and deep learning based systems that can be used in new industries such as next-generation communication and smart factories.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100">
+          <h4 class="card-header">Internet of Things<br>Edge Computing</h4>
+          <div class="card-body">
+            <p class="card-text">Internet of Things(IoT) is one of the most important factors in the field of the 4th industrial revolution.</p>
+            <p class="card-text">Our laboratory researches various types of IoT prototypes from daily life to industrial sites.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark  navbar navbar-fixed-bottom">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+</body>
+</html>
