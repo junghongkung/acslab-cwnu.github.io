@@ -165,8 +165,13 @@
         <div class="card h-100">
           <h4 class="card-header">Machine Learning<br>Deep Learning</h4>
           <div class="card-body">
-            <p class="card-text">Among the various technological elements of AI, ML(Machine Learning) and DL(Deep Learning) have been attracting attention in recent years.</p>
-            <p class="card-text">Our laboratory researches various machine learning and deep learning based systems that can be used in new industries such as next-generation communication and smart factories.</p>
+<?php
+header('Content-Type: text/plain');
+
+$test =readfile("ML.txt");
+
+echo $test;
+?>
           </div>
         </div>
       </div>
