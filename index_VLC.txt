@@ -1,0 +1,3 @@
+The VLC received attention as a potential means to reduce the spectral load on radio cell systems.
+
+Our laboratory researches and experiments with various types of VLC schemes.
