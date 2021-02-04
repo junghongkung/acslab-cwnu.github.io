@@ -109,9 +109,10 @@
           <?
           header('Content-Type: text/plain');
 
-          $test =readfile('acslab-cwnu.github.io/index_introduction.txt');
-          echo '&lt;br&gt;';
+          $test =readfile('/index_introduction.txt');
+          echo ""&lt;br&gt;";
           echo $test;
+
           ?>
         </p>
       </div>
@@ -173,6 +174,8 @@
               echo "&lt;br&gt;";
               echo $test;
               echo "-end-'";
+              $DOCUMENT_ROOT=$_SERVER ['DOCUMENT_ROOT'];
+              echo $DOCUMENT_ROOT . "&lt;br&gt;";
               ?>
             </p>
           </div>
